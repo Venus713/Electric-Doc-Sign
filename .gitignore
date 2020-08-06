@@ -1,0 +1,8 @@
+.vscode/*
+*.pyc
+db.sqlite3
+*.env
+media/*
+static/*
+venv
+celerybeat-schedule

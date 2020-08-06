@@ -1,0 +1,19 @@
+{% load i18n %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
+    {% block extra_styles %}
+    {# -- Add any additional CSS scripts here -- #}
+    {% endblock %}
+</head>
+
+<body>
+    <h1>Welcome to API</h1>
+    <p>You can manage data if you are an administrator. Click <a href="/admin">here</a></p>
+</body>
+
+</html>
