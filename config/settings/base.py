@@ -167,7 +167,7 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-        'rest_framework.authentication.SessionAuthentication',
+        # 'rest_framework.authentication.SessionAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
@@ -213,7 +213,8 @@ JWT_AUTH = {
 
 
 REST_AUTH_SERIALIZERS = {
-    'USER_DETAILS_SERIALIZER': 'apps.users.serializers.DocSignUserDetailSerializer'
+    'USER_DETAILS_SERIALIZER': 'apps.users.serializers.DocSignUserDetailSerializer',
+    'PASSWORD_RESET_SERIALIZER': 'apps.users.serializers.CustomPasswordResetSerializer'
 }
 
 REST_AUTH_REGISTER_SERIALIZERS = {
